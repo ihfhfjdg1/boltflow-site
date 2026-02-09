@@ -1,65 +1,524 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boltflow - AI Tools for Small Business Owners</title>
+    <title>Boltflow — AI Tools That Actually Work for Small Business</title>
+    <meta name="description" content="No-code AI automation for small business owners. Save 10+ hours per week with practical tools under $50/month.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Boltflow — AI Tools for Small Business">
+    <meta property="og:description" content="Practical AI automation without coding. Save time, cut costs, grow faster.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://boltflow.tech">
+    <meta property="og:image" content="https://boltflow.tech/og-image.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Boltflow — AI Tools for Small Business">
+    <meta name="twitter:description" content="No-code AI automation. Save 10+ hours per week.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
     <style>
+        :root {
+            --color-bg: #fafaf9;
+            --color-bg-elevated: #ffffff;
+            --color-text: #1c1917;
+            --color-text-secondary: #78716c;
+            --color-accent: #0d9488;
+            --color-accent-light: #ccfbf1;
+            --color-border: #e7e5e4;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --radius: 8px;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
-        .container { max-width: 800px; margin: 0 auto; padding: 40px 20px; }
-        header { text-align: center; margin-bottom: 60px; }
-        h1 { font-size: 3rem; color: #2563eb; margin-bottom: 10px; }
-        .tagline { font-size: 1.25rem; color: #666; margin-bottom: 30px; }
-        .cta { background: #2563eb; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; display: inline-block; font-weight: 600; }
-        .features { display: grid; gap: 30px; margin: 60px 0; }
-        .feature { background: #f8fafc; padding: 30px; border-radius: 12px; }
-        .feature h3 { color: #2563eb; margin-bottom: 10px; }
-        footer { text-align: center; margin-top: 80px; color: #666; font-size: 0.9rem; }
-
+        
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: var(--font-sans);
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        
+        /* Navigation */
+        nav {
+            background: var(--color-bg-elevated);
+            border-bottom: 1px solid var(--color-border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-text);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+        
+        .logo span { color: var(--color-accent); }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        .nav-links a:hover { color: var(--color-accent); }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(180deg, var(--color-bg-elevated) 0%, var(--color-bg) 100%);
+            padding: 4rem 2rem 3rem;
+            text-align: center;
+        }
+        
+        .hero-container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+        
+        .hero-label {
+            display: inline-block;
+            background: var(--color-accent-light);
+            color: var(--color-accent);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            margin-bottom: 1.5rem;
+        }
+        
+        h1 {
+            font-family: var(--font-serif);
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+        
+        .cta-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1.5rem;
+            border-radius: var(--radius);
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: var(--color-accent);
+            color: white;
+            box-shadow: var(--shadow);
+        }
+        
+        .btn-primary:hover {
+            background: #0f766e;
+            transform: translateY(-1px);
+            box-shadow: 0 8px 12px -2px rgba(13, 148, 136, 0.25);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: var(--color-text);
+            border: 1px solid var(--color-border);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--color-bg);
+            border-color: var(--color-text-secondary);
+        }
+        
+        /* Stats bar */
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            padding: 2rem;
+            border-top: 1px solid var(--color-border);
+            border-bottom: 1px solid var(--color-border);
+            background: var(--color-bg-elevated);
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-accent);
+        }
+        
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--color-text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Main content */
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .section-header {
+            margin-bottom: 2rem;
+        }
+        
+        .section-header h2 {
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .section-header p {
+            color: var(--color-text-secondary);
+        }
+        
+        /* Article grid */
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .article-card {
+            background: var(--color-bg-elevated);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            transition: all 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .article-card:hover {
+            box-shadow: var(--shadow);
+            transform: translateY(-2px);
+            border-color: var(--color-accent);
+        }
+        
+        .article-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.8rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 0.75rem;
+        }
+        
+        .article-category {
+            color: var(--color-accent);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        
+        .article-card h3 {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            line-height: 1.3;
+        }
+        
+        .article-card p {
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+            flex-grow: 1;
+        }
+        
+        .article-footer {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--color-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .read-time {
+            font-size: 0.8rem;
+            color: var(--color-text-secondary);
+        }
+        
+        .read-link {
+            color: var(--color-accent);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        /* Features section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .feature {
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--color-accent-light);
+            color: var(--color-accent);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .feature h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .feature p {
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        /* Newsletter */
+        .newsletter {
+            background: var(--color-text);
+            color: white;
+            border-radius: var(--radius);
+            padding: 3rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .newsletter h2 {
+            font-family: var(--font-serif);
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .newsletter p {
+            color: #a8a29e;
+            margin-bottom: 1.5rem;
+        }
+        
+        .newsletter-form {
+            display: flex;
+            gap: 0.75rem;
+            justify-content: center;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.875rem 1rem;
+            border: none;
+            border-radius: var(--radius);
+            font-size: 1rem;
+        }
+        
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--color-border);
+            padding: 2rem;
+            text-align: center;
+            color: var(--color-text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .stats { flex-direction: column; gap: 1.5rem; }
+            .features { grid-template-columns: 1fr; }
+            .article-grid { grid-template-columns: 1fr; }
+            .newsletter-form { flex-direction: column; }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>⚡ Boltflow</h1>
-            <p class="tagline">AI Tools That Actually Save Small Businesses Time and Money</p>
-            <a href="#newsletter" class="cta">Get Weekly AI Tips</a>
-        </header>
-        
-        <div class="features">
-            <div class="feature">
-                <h3>🤖 Automation Without Coding</h3>
-                <p>Discover how to automate your repetitive tasks using AI tools that require zero technical skills.</p>
-            </div>
-
-            <div class="feature">
-                <h3>💰 Real Cost Savings</h3>
-                <p>Practical guides on tools that pay for themselves—most under $50/month.</p>
-            </div>
-            <div class="feature">
-                <h3>⏱️ Setup in Minutes</h3>
-                <p>No 6-hour courses. No complex integrations. Get results today.</p>
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="logo">Bolt<span>flow</span></a>
+            <ul class="nav-links">
+                <li><a href="/">Articles</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <header class="hero">
+        <div class="hero-container">
+            <span class="hero-label">No Coding Required</span>
+            <h1>AI Tools That Actually Work for Small Business</h1>
+            <p class="hero-subtitle">Practical automation guides for business owners who want results without becoming tech experts. Save 10+ hours every week.</p>
+            <div class="cta-group">
+                <a href="#latest" class="btn btn-primary">Read Latest Guides</a>
+                <a href="#newsletter" class="btn btn-secondary">Join Newsletter</a>
             </div>
         </div>
-        
-        <div class="feature">
-            <h3>📝 Latest Articles</h3>
-            <p><a href="/blog/ai-tools-save-time.html" style="color: #2563eb; text-decoration: none;">7 AI Tools That Save Small Business Owners 10+ Hours Per Week</a></p>
-            <p style="color: #666; font-size: 0.9rem;">February 9, 2025</p>
+    </header>
+    
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-number">7</div>
+            <div class="stat-label">Tools Tested</div>
         </div>
-
-        <div class="feature" id="newsletter">
-            <h3>📧 Join 500+ Small Business Owners</h3>
-            <p>Get one actionable AI tip every Tuesday. No fluff, no spam.</p>
-            <p style="margin-top: 15px; color: #666; font-style: italic;">[Newsletter signup coming soon]</p>
+        <div class="stat">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Hours Saved Weekly</div>
         </div>
-
-        
-        <footer>
-            <p>© 2025 Boltflow.tech — AI for Small Business</p>
-        </footer>
+        <div class="stat">
+            <div class="stat-number">$50</div>
+            <div class="stat-label">Max Cost/Month</div>
+        </div>
     </div>
+    
+    <main>
+        <section id="latest">
+            <div class="section-header">
+                <h2>Latest Guides</h2>
+                <p>Step-by-step tutorials tested on real businesses.</p>
+            </div>
+            
+            <div class="article-grid">
+                <a href="/blog/ai-tools-save-time.html" class="article-card">
+                    <div class="article-meta">
+                        <span class="article-category">Productivity</span>
+                        <span>Feb 9, 2025</span>
+                    </div>
+                    <h3>7 AI Tools That Save Small Business Owners 10+ Hours Per Week</h3>
+                    <p>Real ROI breakdown of ChatGPT, Notion AI, Loom, and 4 more. Exact costs, time savings, and where to start.</p>
+                    <div class="article-footer">
+                        <span class="read-time">8 min read</span>
+                        <span class="read-link">Read →</span>
+                    </div>
+                </a>
+                
+                <a href="/blog/chatgpt-customer-service.html" class="article-card">
+                    <div class="article-meta">
+                        <span class="article-category">Customer Service</span>
+                        <span>Feb 9, 2025</span>
+                    </div>
+                    <h3>How to Use ChatGPT for Customer Service Without Sounding Like a Robot</h3>
+                    <p>The exact prompt templates and workflow to handle 80% of customer inquiries automatically while keeping a human touch.</p>
+                    <div class="article-footer">
+                        <span class="read-time">6 min read</span>
+                        <span class="read-link">Read →</span>
+                    </div>
+                </a>
+                
+                <a href="/blog/ai-email-automation.html" class="article-card">
+                    <div class="article-meta">
+                        <span class="article-category">Email</span>
+                        <span>Feb 9, 2025</span>
+                    </div>
+                    <h3>AI Email Automation: From Inbox Chaos to Zero in 30 Minutes</h3>
+                    <p>Set up a system that drafts, categorizes, and prioritizes your emails. Compatible with Gmail, Outlook, and any email client.</p>
+                    <div class="article-footer">
+                        <span class="read-time">7 min read</span>
+                        <span class="read-link">Read →</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+        
+        <section class="features">
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <h3>Quick Setup</h3>
+                <p>Most tools configured in under 15 minutes. No technical expertise needed.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💰</div>
+                <h3>Real ROI</h3>
+                <p>Every recommendation includes cost analysis and time savings calculation.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🎯</div>
+                <h3>Small Business Focus</h3>
+                <p>Not enterprise software. Tools that work for teams of 1-20 people.</p>
+            </div>
+        </section>
+        
+        <section class="newsletter" id="newsletter">
+            <h2>Join 500+ Small Business Owners</h2>
+            <p>One actionable AI tip every Tuesday. No fluff, no spam, unsubscribe anytime.</p>
+            <form class="newsletter-form" action="#" method="POST">
+                <input type="email" placeholder="your@email.com" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Boltflow.tech — Practical AI for Small Business</p>
+    </footer>
 </body>
 </html>
