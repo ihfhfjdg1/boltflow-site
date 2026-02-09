@@ -2,9 +2,13 @@
   "version": 2,
   "name": "boltflow-site",
   "builds": [
-    { "src": "index.html", "use": "@vercel/static" }
+    { "src": "**/*.html", "use": "@vercel/static" },
+    { "src": "**/*.xml", "use": "@vercel/static" },
+    { "src": "**/*.txt", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
+    { "src": "/blog/(.*)", "dest": "/blog/$1" },
+    { "src": "/(\\w+)", "dest": "/$1.html" },
+    { "src": "/", "dest": "/index.html" }
   ]
 }
