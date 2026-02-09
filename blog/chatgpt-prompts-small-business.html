@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25 ChatGPT Prompts Every Small Business Owner Should Bookmark</title>
+    <meta name="description" content="Copy-paste ChatGPT prompts for marketing, sales, customer service, and operations. Tested on real businesses.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="25 ChatGPT Prompts Every Small Business Owner Should Bookmark">
+    <meta property="og:description" content="Copy-paste prompts for marketing, sales, customer service, and operations.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://boltflow.tech/blog/chatgpt-prompts-small-business.html">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="25 ChatGPT Prompts for Small Business">
+    
+    <meta name="twitter:description" content="Copy-paste prompts that actually work.">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://boltflow.tech/blog/chatgpt-prompts-small-business.html">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-bg: #fafaf9;
+            --color-bg-elevated: #ffffff;
+            --color-text: #1c1917;
+            --color-text-secondary: #78716c;
+            --color-accent: #0d9488;
+            --color-accent-light: #ccfbf1;
+            --color-border: #e7e5e4;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --radius: 8px;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: var(--font-sans);
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.7;
+            font-size: 17px;
+        }
+        
+        nav {
+            background: var(--color-bg-elevated);
+            border-bottom: 1px solid var(--color-border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+        }
+        
+        .nav-container a {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-text);
+            text-decoration: none;
+        }
+        
+        .nav-container a span { color: var(--color-accent); }
+        
+        article {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        
+        .breadcrumb {
+            font-size: 0.875rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 2rem;
+        }
+        
+        .breadcrumb a {
+            color: var(--color-accent);
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover { text-decoration: underline; }
+        
+        .article-header {
+            margin-bottom: 3rem;
+        }
+        
+        .category {
+            display: inline-block;
+            background: var(--color-accent-light);
+            color: var(--color-accent);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            padding: 0.375rem 0.75rem;
+            border-radius: 100px;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-family: var(--font-serif);
+            font-size: clamp(1.75rem, 5vw, 2.5rem);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .meta {
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+        }
+        
+        .meta span { margin-right: 1rem; }
+        
+        h2 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 3rem 0 1rem;
+            letter-spacing: -0.01em;
+        }
+        
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 2rem 0 0.75rem;
+            color: var(--color-accent);
+        }
+        
+        p { margin-bottom: 1.25rem; }
+        
+        .prompt-card {
+            background: #1c1917;
+            color: #e7e5e4;
+            border-radius: var(--radius);
+            padding: 1.25rem;
+            margin: 1rem 0;
+            position: relative;
+        }
+        
+        .prompt-card .label {
+            position: absolute;
+            top: -10px;
+            left: 1rem;
+            background: var(--color-accent);
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+        
+        .prompt-card code {
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            display: block;
+        }
+        
+        .tip {
+            background: var(--color-accent-light);
+            border-left: 4px solid var(--color-accent);
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 0 var(--radius) var(--radius) 0;
+        }
+        
+        .tip strong {
+            color: var(--color-accent);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .cta-box {
+            background: var(--color-bg-elevated);
+            border: 2px solid var(--color-accent);
+            border-radius: var(--radius);
+            padding: 2rem;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .cta-box h3 {
+            font-family: var(--font-serif);
+            margin-top: 0;
+            color: var(--color-text);
+        }
+        
+        .cta-box p {
+            color: var(--color-text-secondary);
+            margin-bottom: 1.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--color-accent);
+            color: white;
+            padding: 0.875rem 1.5rem;
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .btn:hover { background: #0f766e; }
+        
+        footer {
+            border-top: 1px solid var(--color-border);
+            padding: 2rem;
+            text-align: center;
+            color: var(--color-text-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/">Bolt<span>flow</span></a>
+        </div>
+    </nav>
+    
+    <article>
+        <div class="breadcrumb">
+            <a href="/">Home</a> &rsaquo; <a href="/">Articles</a> &rsaquo; Productivity
+        </div>
+        
+        <header class="article-header">
+            <span class="category">Productivity</span>
+            <h1>25 ChatGPT Prompts Every Small Business Owner Should Bookmark</h1>
+            <div class="meta">
+                <span>February 9, 2025</span>
+                <span>10 min read</span>
+            </div>
+        </header>
+        
+        <p>Most people use ChatGPT wrong. They ask vague questions and get generic answers. These prompts are different — they're <strong>designed for specific business outcomes</strong>.</p>
+        
+        <p>Copy them exactly, fill in the brackets, and watch your productivity jump.</p>
+        
+        <div class="tip">
+            <strong>💡 Pro Tip:</strong>
+            Save these in a note-taking app (Notion, Apple Notes, whatever). Create a "ChatGPT Prompts" page and organize by category. You'll use these daily.
+        </div>
+        
+        <h2>📧 CUSTOMER SERVICE (Prompts 1-5)</h2>
+        
+        <h3>1. The Complaint Transformer</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"I run [BUSINESS TYPE]. A customer just sent this complaint: [PASTE COMPLAINT]
+
+Draft a response that:
+1. Acknowledges their frustration specifically
+2. Explains what happened without making excuses  
+3. Offers a concrete solution
+4. Sounds like a real person, not a corporation
+
+Keep it under 150 words."</code>
+        </div>
+        
+        <h3>2. The FAQ Generator</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"Based on these 10 customer questions I received this week:
+[PASTE QUESTIONS]
+
+Create 5 FAQ entries that:
+- Address the real concern behind each question
+- Are written in a friendly but authoritative tone
+- Include a brief answer (2-3 sentences max)
+
+Format as Question → Answer pairs."</code>
+        </div>
+        
+        <h3>3. The Upsell Email</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"Write a follow-up email to a customer who bought [PRODUCT] from me.
+
+Goals:
+- Thank them genuinely
+- Introduce [RELATED PRODUCT] as a natural next step
+- Explain why it complements what they already have
+- Include a soft CTA (not pushy)
+
+Tone: Helpful friend, not salesperson"</code>
+        </div>
+        
+        <h3>4. The Difficult Customer</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"This customer keeps asking for unreasonable refunds/changes: [PASTE THREAD]
+
+Draft a response that:
+1. Stands firm on my policy
+2. Doesn't damage the relationship
+3. Offers an alternative if possible
+4. Is polite but clear
+
+I want to keep them as a customer if possible, but not at any cost."</code>
+        </div>
+        
+        <h3>5. The Review Request</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"Write an email asking a happy customer to leave a Google review.
+
+Context:
+- They just told me they loved [SPECIFIC RESULT]
+- I want it to feel personal, not templated
+- Include a direct link to my review page
+- Make it easy (one click if possible)
+
+Keep it under 100 words."</code>
+        </div>
+        
+        <h2>📢 MARKETING (Prompts 6-12)</h2>
+        
+        <h3>6. The Social Media Calendar</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"I need a week's worth of social media posts for [PLATFORM].
+
+My business: [WHAT YOU DO]
+My audience: [WHO THEY ARE]
+Goal: [ENGAGEMENT/SALES/AWARENESS]
+
+Create 7 posts (one per day):
+- Mix of educational, promotional, and personality
+- Include relevant hashtags
+- Keep captions under 150 words
+
+Format: Day 1: [content] Day 2: [content] etc."</code>
+        </div>
+        
+        <h3>7. The Headline Generator</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"I wrote an article about [TOPIC]. Here are the key points:
+[BULLET POINTS]
+
+Generate 10 headline options that:
+- Speak to [TARGET AUDIENCE]
+- Promise a specific outcome or benefit
+- Use power words but avoid clickbait
+- Range from practical to curiosity-driven
+
+Include why each headline works."</code>
+        </div>
+        
+        
+        <h3>8. The Sales Page</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"Write a sales page for [PRODUCT/SERVICE].
+
+Details:
+- Price: $[AMOUNT]
+- Target customer: [DESCRIPTION]
+- Main benefit: [OUTCOME]
+- Key features: [LIST]
+
+Structure:
+1. Hook (problem they face)
+2. Agitation (why it matters)
+3. Solution (your offering)
+4. Proof (testimonials/results)
+5. Offer (what they get)
+6. Guarantee (risk reversal)
+7. CTA (what to do next)
+
+Tone: Conversational, confident, not hype-y"</code>
+        </div>
+        
+        <h3>9. The Email Subject Lines</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"I need subject lines for an email about [TOPIC].
+
+Generate 15 options across these categories:
+- Curiosity gap (makes them want to open)
+- Direct benefit (what they'll gain)
+- Urgency (time-sensitive)
+- Question (engagement)
+- Personal (uses 'you')
+
+Each should be under 60 characters."</code>
+        </div>
+        
+        <h3>10. The Competitor Analysis</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"Here's what my competitor offers: [DESCRIPTION]
+And here's what I offer: [YOUR OFFERING]
+
+Help me position against them by identifying:
+1. Their likely weaknesses
+2. My unique advantages  
+3. Messaging that highlights the differences
+4. Who should choose me vs. them
+
+Be honest—when should someone pick them instead?"</code>
+        </div>
+        
+        
+        <h3>11. The Lead Magnet Ideas</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"I need lead magnet ideas for [BUSINESS TYPE] targeting [AUDIENCE].
+
+Generate 10 ideas that:
+- Solve a specific, urgent problem
+- Can be consumed in under 15 minutes
+- Showcase my expertise
+- Naturally lead to my paid offering
+
+For each, include:
+- Title
+- Format (checklist, template, guide, etc.)
+- Why it would work"</code>
+        </div>
+        
+        <h3>12. The Testimonial Request</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"Draft an email asking a client for a testimonial.
+
+Context:
+- They achieved [SPECIFIC RESULT]
+- I want it to feel easy, not burdensome
+- I'll offer to draft something they can edit
+- Keep it short and casual
+
+Include suggested questions that would get a great testimonial."</code>
+        </div>
+        
+        
+        <h2>⚙️ OPERATIONS (Prompts 13-18)</h2>
+        
+        <h3>13. The SOP Creator</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"I need an SOP (Standard Operating Procedure) for [TASK].
+
+Here's how I currently do it:
+[DESCRIBE PROCESS]
+
+Create a document that:
+1. Lists required tools/materials
+2. Breaks down into numbered steps
+3. Includes common mistakes to avoid
+4. Has a quality checklist at the end
+5. Estimates time needed
+
+Format so a new employee could follow it without asking questions."</code>
+        </div>
+        
+        <h3>14. The Meeting Agenda</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"Create an agenda for a meeting about [TOPIC] with [ATTENDEES].
+
+Goals: [WHAT YOU WANT TO ACCOMPLISH]
+Time available: [DURATION]
+
+Include:
+- Specific discussion points
+- Time allocation for each
+- Pre-meeting prep needed
+- Desired outcomes
+- Next steps format
+
+Keep total time under [DURATION]."</code>
+        </div>
+        
+        <h3>15. The Job Description</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"Write a job description for a [ROLE] at my [BUSINESS TYPE].
+
+Key responsibilities: [LIST]
+Required skills: [LIST]
+Nice-to-have: [LIST]
+Salary range: $[RANGE]
+Location: [REMOTE/ONSITE/HYBRID]
+
+Tone: Professional but approachable. We want someone who's competent but also a culture fit."</code>
+        </div>
+        
+        <h3>16. The Vendor Comparison</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"I'm choosing between these vendors for [SERVICE/PRODUCT]:
+
+Option A: [DETAILS + PRICE]
+Option B: [DETAILS + PRICE]
+Option C: [DETAILS + PRICE]
+
+My priorities: [WHAT MATTERS MOST]
+
+Create a comparison that helps me decide, including:
+- Best overall value
+- Best if budget is tight
+- Best for [SPECIFIC USE CASE]
+- Red flags for each"</code>
+        </div>
+        
+        <h3>17. The Process Improvement</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"Here's a process that takes too long: [DESCRIBE]
+
+It currently takes [TIME]. I want to get it under [GOAL TIME].
+
+Analyze and suggest:
+1. Steps that could be eliminated
+2. Steps that could be automated
+3. Tools that might help
+4. Reordering that would make it faster
+
+Be ruthless—challenge whether each step is actually necessary."</code>
+        </div>
+        
+        㱈>18. The Cash Flow Forecast</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"Help me create a 3-month cash flow projection.
+
+Current situation:
+- Monthly revenue (average): $[AMOUNT]
+- Monthly expenses: $[AMOUNT]
+- Big upcoming expenses: [LIST WITH DATES]
+- Expected revenue changes: [DESCRIPTION]
+
+Show me month by month:
+- Starting balance
+- Expected income
+- Expected expenses  
+- Ending balance
+- Any red flags to watch for"</code>
+        </div>
+        
+        
+        
+        <h2>💡 STRATEGY (Prompts 19-25)</h2>
+        
+        <h3>19. The Business Model Canvas</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"Help me think through my business model for [BUSINESS IDEA].
+
+What I know:
+- Product/service: [DESCRIPTION]
+- Target customer: [DESCRIPTION]
+- Price point: $[AMOUNT]
+
+Fill out a simplified business model canvas covering:
+- Value proposition
+- Customer segments
+- Revenue streams
+- Key activities
+- Cost structure
+- Potential risks
+
+Flag any gaps in my thinking."</code>
+        </div>
+        
+        <h3>20. The Pivot Analysis</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"My business currently does [CURRENT OFFERING] but I'm considering pivoting to [NEW DIRECTION].
+
+Help me evaluate:
+1. What's working in my current model
+2. What's not working
+3. Evidence that the new direction would work better
+4. Risks of switching
+5. Minimum viable test to validate the pivot
+6. Timeline for deciding whether to commit
+
+Be honest about whether I'm chasing a shiny object or solving a real problem."</code>
+        </div>
+        
+        <h3>21. The Pricing Strategy</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"I'm pricing [PRODUCT/SERVICE]. My costs are approximately $[AMOUNT] per unit.
+
+Competitors charge between $[LOW] and $[HIGH].
+
+My target market is [DESCRIPTION].
+
+Help me think through:
+- Cost-plus pricing vs. value-based pricing
+- Positioning (premium, mid-market, budget)
+- Pricing tiers that might work
+- When to raise prices
+- Discounting strategy
+
+Include what I'd need to believe for each price point to make sense."</code>
+        </div>
+        
+        <h3>22. The Customer Interview Guide</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"I want to interview my best customers to understand why they bought.
+
+Create an interview script that:
+- Makes them comfortable sharing honestly
+- Uncovers the real reasons they chose me
+- Reveals what almost made them not buy
+- Identifies what else they wish I offered
+- Finds out how they'd describe me to a friend
+
+Include follow-up questions to dig deeper when I get surface-level answers."</code>
+        </div>
+        
+        <h3>23. The Exit Plan</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"I run [BUSINESS TYPE] doing approximately $[REVENUE]/year in revenue.
+
+I want to be able to sell it in [TIMELINE] years.
+
+What should I be doing NOW to maximize value later?
+
+Cover:
+- What buyers actually look for
+- Systems/processes that increase valuation
+- Red flags that kill deals
+- Timeline for preparation
+- Whether my current trajectory is on track
+
+Be realistic about what my business is likely worth today vs. what it could be worth."</code>
+        </div>
+        
+        㱈>24. The Delegation Planner</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"Here are all the things I do in my business:
+[TASK LIST]
+
+Help me decide what to delegate first by analyzing each task for:
+- Hourly value (what it's worth to the business)
+- Delegation difficulty (how hard to train someone)
+- Risk if done wrong
+- My personal enjoyment of the task
+
+Create a priority order for what I should hand off, starting with the easiest wins."</code>
+        </div>
+        
+        
+        <h3>25. The Weekly Review</h3>
+        <div class="prompt-card">
+            <span class="label">Copy This</span>
+            <code>"I want to do a weekly business review. Here's what happened this week:
+
+Wins: [LIST]
+Challenges: [LIST]
+Numbers: [KEY METRICS]
+
+Help me analyze:
+1. What I should keep doing
+2. What I should stop doing
+3. What I should start doing
+4. The one thing that would make next week successful
+5. Any patterns I'm missing
+
+Keep me accountable—call out any excuses or rationalizations."</code>
+        </div>
+        
+        
+        <h2>How to Use These Effectively</h2>
+        
+        <p><strong>The secret isn't having prompts—it's using them consistently.</strong></p>
+        
+        <p>Pick 3-5 that match your biggest current pain points. Save them where you'll actually use them. Then <strong>build the habit</strong> of reaching for these before starting from scratch.</p>
+        
+        <p>Within a week, you'll find yourself adapting them naturally. Within a month, you'll have your own library of go-to prompts customized to your business.</p>
+        
+        <div class="tip">
+            <strong>🎯 Challenge:</strong>
+            Use at least one prompt from this list every day for the next week. Track which ones save you the most time—those are your winners.
+        </div>
+        
+        <div class="cta-box">
+            <h3>Ready to Automate Your Customer Service?</h3>
+            <p>These prompts work even better when you have a system. Learn how to handle 80% of customer inquiries automatically.</p>
+            <a href="/blog/chatgpt-customer-service.html" class="btn">Read the Guide →</a>
+        </div>
+    </article>
+    
+    <footer>
+        <p>&copy; 2025 Boltflow.tech — <a href="/">Back to Home</a></p>
+    </footer>
+</body>
+</html>

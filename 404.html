@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found — Boltflow</title>
+    <meta name="description" content="The page you're looking for doesn't exist. Browse our AI automation guides for small business owners.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-bg: #fafaf9;
+            --color-text: #1c1917;
+            --color-text-secondary: #78716c;
+            --color-accent: #0d9488;
+            --color-border: #e7e5e4;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --radius: 8px;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: var(--font-sans);
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .error-code {
+            font-family: var(--font-serif);
+            font-size: 6rem;
+            font-weight: 700;
+            color: var(--color-accent);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            font-family: var(--font-serif);
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            color: var(--color-text-secondary);
+            max-width: 400px;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--color-accent);
+            color: white;
+            padding: 0.875rem 1.5rem;
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .btn:hover { background: #0f766e; }
+        
+        .suggested {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--color-border);
+        }
+        
+        .suggested h2 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--color-text-secondary);
+        }
+        
+        .suggested a {
+            display: block;
+            color: var(--color-accent);
+            text-decoration: none;
+            margin: 0.5rem 0;
+        }
+        
+        .suggested a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="error-code">404</div>
+    
+    <h1>Page Not Found</h1>
+    
+    <p>The page you're looking for doesn't exist or has been moved.</p>
+    
+    <a href="/" class="btn">Go to Homepage</a>
+    
+    <div class="suggested">
+        <h2>Popular Guides</h2>
+        
+        <a href="/blog/ai-tools-save-time.html">7 AI Tools That Save Time</a>
+        
+        <a href="/blog/chatgpt-customer-service.html">ChatGPT for Customer Service</a>
+        
+        <a href="/blog/ai-email-automation.html">Email Automation Guide</a>
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Boltflow</title>
+    <meta name="description" content="Boltflow helps small business owners save time and money with practical AI automation. No coding required.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="About Boltflow">
+    <meta property="og:description" content="Practical AI automation for small business owners.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://boltflow.tech/about.html">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --color-bg: #fafaf9;
+            --color-bg-elevated: #ffffff;
+            --color-text: #1c1917;
+            --color-text-secondary: #78716c;
+            --color-accent: #0d9488;
+            --color-accent-light: #ccfbf1;
+            --color-border: #e7e5e4;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --radius: 8px;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: var(--font-sans);
+            background: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.7;
+            font-size: 17px;
+        }
+        
+        nav {
+            background: var(--color-bg-elevated);
+            border-bottom: 1px solid var(--color-border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-text);
+            text-decoration: none;
+        }
+        
+        .logo span { color: var(--color-accent); }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .nav-links a:hover { color: var(--color-accent); }
+        
+        article {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        h1 {
+            font-family: var(--font-serif);
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .lead {
+            font-size: 1.25rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+        
+        h2 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 3rem 0 1rem;
+        }
+        
+        p { margin-bottom: 1.25rem; }
+        
+        .value-box {
+            background: var(--color-bg-elevated);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius);
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .value-box h3 {
+            color: var(--color-accent);
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .value-box ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+        
+        .value-box li {
+            margin-bottom: 0.75rem;
+        }
+        
+        .cta-box {
+            background: var(--color-accent);
+            color: white;
+            border-radius: var(--radius);
+            padding: 2rem;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        
+        .cta-box h3 {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-box p {
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: white;
+            color: var(--color-accent);
+            padding: 0.875rem 1.5rem;
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .btn:hover { background: var(--color-accent-light); }
+        
+        footer {
+            border-top: 1px solid var(--color-border);
+            padding: 2rem;
+            text-align: center;
+            color: var(--color-text-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="logo">Bolt<span>flow</span></a>
+            <ul class="nav-links">
+                <li><a href="/">Articles</a></li>
+                <li><a href="/#newsletter">Newsletter</a></li>
+                <li><a href="/about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <article>
+        <h1>About Boltflow</h1>
+        
+        <p class="lead">We help small business owners save 10+ hours per week using AI — without learning to code, hiring expensive consultants, or reading through hype-filled tech news.</p>
+        
+        <h2>The Problem We're Solving</h2>
+        
+        <p>Small business owners are drowning in work. The average entrepreneur spends 60+ hours per week on their business, with most of that time on repetitive tasks that don't grow revenue.</p>
+        
+        <p>Meanwhile, AI tools have become incredibly powerful — but the advice out there is either:</p>
+        
+        
+        <ul>
+            <li><strong>Too technical</strong> — assuming you know how to code or integrate APIs</li>
+            <li><strong>Too vague</strong> — "use AI to grow your business" without telling you how</li>
+            <li><strong>Too enterprise</strong> — focused on Fortune 500 budgets and teams</li>
+        </ul>
+        
+        
+        <p>We exist to fill that gap.</p>
+        
+        
+        <h2>What Makes Us Different</h2>
+        
+        <div class="value-box">
+            <h3>⚡ Practical First</h3>
+            
+            <p>Every guide includes:</p>
+            
+            
+            <ul>
+                <li>Exact tools we recommend (with pricing)</li>
+                <li>Step-by-step setup instructions</li>
+                <li>Copy-paste prompts and templates</li>
+                <li>Realistic time estimates</li>
+            </ul>
+        
+        
+        </div>
+        
+        
+        <div class="value-box">
+            <h3>🎯 Small Business Focus</strong></h3>
+            
+            <p>We specifically serve:</p>
+            
+            
+            <ul>
+                <li>Solo founders and freelancers</li>
+                <li>Small teams (2-20 people)</li>
+                <li>Service businesses and e-commerce</li>
+                <li>Budgets under $100/month for tools</li>
+            </ul>
+        
+        
+        </div>
+        
+        
+        <div class="value-box">
+            <h3>🛡️ No Hype, No BS</h3>
+            
+            <p>We tell you:</p>
+            
+            
+            <ul>
+                <li>What actually works (with evidence)</li>
+                <li>What doesn't work (so you don't waste time)</li>
+                <li>When AI isn't the right solution</li>
+                <li>The real costs (time + money)</li>
+            </ul>
+        
+        
+        </div>
+        
+        
+        <h2>Our Approach</h2>
+        
+        <p>We believe AI should make you <strong>more human</strong>, not less. The goal isn't to automate everything — it's to remove the repetitive work so you can focus on what actually matters:</p>
+        
+        
+        <ul>
+            <li>Building relationships with customers</li>
+            <li>Developing your products and services</li>
+            <li>Strategic thinking and planning</li>
+            <li>Actually enjoying your business</li>
+        </ul>
+        
+        
+        <p>Every tool and technique we recommend has been tested in real small businesses. If we wouldn't use it ourselves, we won't recommend it.</p>
+        
+        
+        <h2>Get Started</h2>
+        
+        <p>New to AI automation? Start with our most popular guide:</p>
+        
+        <p><a href="/blog/ai-tools-save-time.html" style="color: var(--color-accent); font-weight: 600;">7 AI Tools That Save Small Business Owners 10+ Hours Per Week →</a></p>
+        
+        
+        <div class="cta-box">
+            <h3>Join 500+ Small Business Owners</h3>
+            
+            <p>Get one actionable AI tip every Tuesday. No fluff, no spam.</p>
+            
+            <a href="/#newsletter" class="btn">Subscribe to Newsletter</a>
+        </div>
+    </article>
+    
+    <footer>
+        <p>&copy; 2025 Boltflow.tech — Practical AI for Small Business</p>
+    </footer>
+</body>
+</html>

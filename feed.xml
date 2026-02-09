@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
+    <channel>
+        <title>Boltflow - AI Tools for Small Business</title>
+        <atom:link href="https://boltflow.tech/feed.xml" rel="self" type="application/rss+xml" />
+        <link>https://boltflow.tech</link>
+        <description>Practical AI automation guides for small business owners. Save time, cut costs, grow faster.</description>
+        <lastBuildDate>Sun, 09 Feb 2025 08:00:00 +0000</lastBuildDate>
+        <language>en-US</language>
+        <sy:updatePeriod>weekly</sy:updatePeriod>
+        <sy:updateFrequency>1</sy:updateFrequency>
+        
+        <item>
+            <title>7 AI Tools That Save Small Business Owners 10+ Hours Per Week</title>
+            <link>https://boltflow.tech/blog/ai-tools-save-time.html</link>
+            <pubDate>Sun, 09 Feb 2025 08:00:00 +0000</pubDate>
+            <guid isPermaLink="true">https://boltflow.tech/blog/ai-tools-save-time.html</guid>
+            <description>Real ROI breakdown of ChatGPT, Notion AI, Loom, and 4 more. Exact costs, time savings, and where to start.</description>
+        </item>
+        
+        <item>
+            <title>How to Use ChatGPT for Customer Service Without Sounding Like a Robot</title>
+            <link>https://boltflow.tech/blog/chatgpt-customer-service.html</link>
+            <pubDate>Sun, 09 Feb 2025 08:00:00 +0000</pubDate>
+            <guid isPermaLink="true">https://boltflow.tech/blog/chatgpt-customer-service.html</guid>
+            <description>The exact prompt templates and workflow to handle 80% of customer inquiries automatically while keeping a human touch.</description>
+        </item>
+        
+        <item>
+            <title>AI Email Automation: From Inbox Chaos to Zero in 30 Minutes</title>
+            <link>https://boltflow.tech/blog/ai-email-automation.html</link>
+            <pubDate>Sun, 09 Feb 2025 08:00:00 +0000</pubDate>
+            <guid isPermaLink="true">https://boltflow.tech/blog/ai-email-automation.html</guid>
+            <description>Set up a system that categorizes, prioritizes, and drafts your emails. Works with Gmail, Outlook, and any email client.</description>
+        </item>
+    </channel>
+</rss>
